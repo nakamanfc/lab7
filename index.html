@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CALCULATOR</title>
+    <link href="style.css" rel="stylesheet">
+	 <script src="script.js"></script>
+</head>
+
+<form name="calculator">
+  <table>
+    <div id="display">
+                        <div id="display-main" style="text-align: end;height: 40px; font-size: x-large;margin-right: 10px; margin-right: 10px;">
+                            0
+                        </div>
+                        <div style="border: 1px solid rgb(143, 143, 143);"></div>
+                        <div id="display-operations" id="display-operations" style="text-align: end;color: rgb(143, 143, 143);margin-right:10px ; margin-right: 10px;">
+                            0
+                        </div>
+                    </div>
+	<tr>
+      <td><input type="button" value="(" onclick="displayData('(')"></td>
+      <td><input type="button" value=")" onclick="displayData(')')"></td>
+      <td><input type="button" value="%" onclick="displayData('%')"></td>
+      <td><input type="button" class="operator" value="C" onclick="displayData('AC')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="displayData('1')"></td>
+      <td><input type="button" value="2" onclick="displayData('2')"></td>
+      <td><input type="button" value="3" onclick="displayData('3')"></td>
+      <td><input type="button" class="operator" value="+" onclick="displayData('+')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="four" value="4" onclick="displayData('4')"></td>
+      <td><input type="button" name="five" value="5" onclick="displayData('5')"></td>
+      <td><input type="button" name="six" value="6" onclick="displayData('6')"></td>
+      <td><input type="button" class="operator" value="-" onclick="displayData('-')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="seven" value="7" onclick="displayData('7')"></td>
+      <td><input type="button" name="eight" value="8" onclick="displayData('8')"></td>
+      <td><input type="button" name="nine" value="9" onclick="displayData('9')"></td>
+      <td><input type="button" class="operator" value="x" onclick="displayData('*')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class="operator" value="." onclick="displayData('.')"></td>
+      <td><input type="button" class="operator" value="0" onclick="displayData('0')"></td>
+      <td><input type="button" class="operator" value="=" onclick="displayData('=')"></td>
+      <td><input type="button" class="operator" value="/" onclick="displayData('/')"></td>
+    </tr>
+  </table>
+</form>
